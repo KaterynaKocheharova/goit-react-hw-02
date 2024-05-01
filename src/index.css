@@ -1,8 +1,42 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background: linear-gradient(to right, #221518, rgba(120, 76, 47, 0.7));
+  --dark-container: #221518;
+  --main-font-color: rgb(218, 187, 158);
+  --big-mb: 50px;
+  --medium-mb: 30px;
+  --small-mb: 10px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
   line-height: 1.5;
 }
 
-button {
-  margin-right: 5px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* add hover state to buttons; style the last section; check for responsiveness */

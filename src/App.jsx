@@ -3,6 +3,7 @@ import Description from "./components/Description/Description";
 import Options from "./components/Options/Options";
 import Feedback from "./components/Feedback/Feedback";
 import Notification from "./components/Notification/Notification";
+import css from "./App.module.css";
 
 export default function App() {
   const localStorageFeedbacksKey = "feedbacks";
@@ -61,8 +62,8 @@ export default function App() {
       : 0;
 
   return (
-    <section>
-      <div>
+    <section className={css.section}>
+      <div className={css.container}>
         <Description />
         <Options
           updateFeedback={updateFeedback}

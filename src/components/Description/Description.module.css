@@ -1,0 +1,41 @@
+.descr-card {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--dark-container);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--main-font-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  max-width: 300px;
+  border-radius: 60px;
+  margin-bottom: var(--big-mb);
+}
+
+@media screen and(min-width: 768px) {
+  .descr-card {
+    max-width: 700px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .descr-card {
+    max-width: 1000px;
+  }
+}
+
+.title {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  color: var(--main-font-color);
+  font-size: 50px;
+  margin-bottom: var(--medium-mb);
+}
+
+.text {
+  text-align: center;
+  font-size: 24px;
+  color: var(--main-font-color);
+  margin-bottom: var(--medium-mb);
+}

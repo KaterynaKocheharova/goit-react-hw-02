@@ -1,0 +1,31 @@
+.buttons-container {
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons-container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .buttons-container {
+    max-width: 1000px;
+  }
+}
+
+.button {
+  padding: 15px;
+  background-color: #221518;
+  border-radius: 49px;
+  border: none;
+  border: 1px solid var(--main-font-color);
+  color: var(--main-font-color);
+  cursor: pointer;
+}
