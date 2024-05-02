@@ -1,5 +1,5 @@
 .descr-card {
-  width: 90%;
+  width: 95%;
   margin-right: auto;
   margin-left: auto;
   background-color: var(--dark-container);
@@ -11,6 +11,12 @@
   padding-left: 10px;
   border-radius: 60px;
   margin-bottom: var(--big-mb);
+}
+
+@media screen and (min-width: 1440px) {
+  .descr-card {
+    width: 70%;
+  }
 }
 
 .title {
