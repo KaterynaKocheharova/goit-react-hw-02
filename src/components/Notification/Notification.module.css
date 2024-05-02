@@ -1,4 +1,6 @@
 .notification-message {
+  display: flex;
+  align-items: center;
   border-radius: 5px;
   border: 1px solid var(--main-font-color);
   padding: 15px;
