@@ -1,0 +1,16 @@
+.feedback-list {
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+  flex-wrap: wrap;
+  background-color: var(--dark-container);
+  color: var(--main-font-color);
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid var(--main-font-color);
+}

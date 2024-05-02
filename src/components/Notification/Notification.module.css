@@ -1,0 +1,11 @@
+.notification-message {
+  max-width: 200px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid var(--main-font-color);
+  padding: 15px;
+  background-color: var(--dark-container);
+  color: var(--main-font-color);
+  font-size: 20px;
+  text-align: center;
+}

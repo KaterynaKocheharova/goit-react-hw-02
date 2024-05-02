@@ -1,3 +1,5 @@
+import css from "./Notification.module.css";
+
 export default function Notification() {
-  return <p>No reviews yet</p>;
+  return <p className={css["notification-message"]}>No reviews yet</p>;
 }
