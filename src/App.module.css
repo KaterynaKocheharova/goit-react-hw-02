@@ -25,4 +25,15 @@
 
 .bottom-container {
   display: flex;
+  justify-content: space-around;
+}
+
+.cup-image {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .cup-image {
+    display: block;
+  }
 }

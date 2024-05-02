@@ -4,7 +4,9 @@ import Options from "./components/Options/Options";
 import Feedback from "./components/Feedback/Feedback";
 import Notification from "./components/Notification/Notification";
 import cup1x from "./img/cup1x.png";
+import cup2x from "./img/cup2x.png";
 import beans1x from "./img/beans1x.png";
+import beans2x from "./img/beans2x.png";
 import css from "./App.module.css";
 
 export default function App() {
@@ -73,7 +75,13 @@ export default function App() {
           totalFeedbacks={totalFeedbacks}
         />
         <div className={css["bottom-container"]}>
-          <img src={cup1x} alt="a cup of coffee" width="108" height="107" />
+          <img
+            src={cup1x}
+            alt="a cup of coffee"
+            width="108"
+            height="107"
+            srcSet={`${cup1x} 1x, ${cup2x} 2x`}
+          />
           {totalFeedbacks !== 0 && positiveFeedbackPercentage !== undefined ? (
             <Feedback
               feedbacks={feedbacks}
@@ -83,7 +91,13 @@ export default function App() {
           ) : (
             <Notification />
           )}
-          <img srcSet={beans1x} alt="coffee beans" width="108" height="107" />
+          <img
+            className={css["cup-image"]}
+            srcSet={`${beans1x} 1x, ${beans2x} 2x`}
+            alt="coffee beans"
+            width="108"
+            height="107"
+          />
         </div>
       </div>
     </section>
